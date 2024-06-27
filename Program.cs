@@ -122,6 +122,8 @@ namespace CSPractice
                     break;
             }
 
+            // #2 13-6. 삼항 연산자
+            Console.WriteLine(number % 2 != 1 ? true : false);
         }
     }
 }
