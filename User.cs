@@ -14,6 +14,7 @@ namespace CSPractice
 
     class Product
     {
+        public static double TAX_RATIO = 1.0;
         public string name;
         public int price;
     }
