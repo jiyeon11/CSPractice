@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace CSPractice
 {
+    class FirstClass
+    {
+
+    }
+
     internal class Program
     {
+        class ThirdClass
+        {
+
+        }
+
         static void Main(string[] args)
         {
             // #1 12-1. 기본용어
@@ -161,6 +171,11 @@ namespace CSPractice
             Console.WriteLine(Math.Min(42, 1));  // 1
             Console.WriteLine(Math.Max(42, 1));  // 42
             Console.WriteLine(Math.PI); // 3.141592~~
+
+
+            // #4 21-3. 클래스 생성
+
+
         }
     }
 }
