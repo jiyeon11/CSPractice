@@ -82,7 +82,7 @@ namespace CSPractice
         {
             public int variable = 273;
 
-            public void Method()
+            public virtual void Method()
             {
                 Console.WriteLine("부모 메서드");
             }
@@ -92,9 +92,16 @@ namespace CSPractice
         {
             public string variable = "하이딩";
 
-            public void Method()
+            public void new Method()
             {
                 Console.WriteLine("자식 메서드");
+            }
+        }
+        class Child2 : Parent
+        {
+            public override void Method()
+            {
+                Console.Write("오버라이드된 자식 메서드");
             }
         }
 
@@ -359,6 +366,15 @@ namespace CSPractice
             Console.WriteLine(p.variable); // 273
             p.Method(); // 부모 메서드
             ((Child)p).Method(); // 자식 메서드f
+
+
+            // #6 23-8. 오버라이딩
+            Child2 child2 = new Child2();
+            child2.Method(); // 오버라이드된 자식 메서드
+            ((Parent)child2).Method();
+            Parent p2 = child2;
+            p2.Method(); // 오버라이드된 자식 메서드
+            ((Child)p2).Method(); // 오버라이드된 자식 메서드
         }
     }
 }
