@@ -323,6 +323,11 @@ namespace CSPractice
             Child child = new Child();
             Child child2 = new Child("홍길동");
 
+
+            // #6 23-7. 섀도잉
+            int number1 = 20;
+            Console.WriteLine(number1); // 20
+
         }
     }
 }
